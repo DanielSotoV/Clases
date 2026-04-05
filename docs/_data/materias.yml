@@ -1,6 +1,5 @@
 - nombre: "Criptografía con Python"
   url: "/materias/criptografia"
-  icono: "🔐"
   descripcion_corta: "Fundamentos y técnicas modernas de criptografía"
   descripcion: >
     Estudio de algoritmos criptográficos simétricos, asimétricos, funciones hash
@@ -19,7 +18,6 @@
 
 - nombre: "Docker y Contenedores"
   url: "/materias/docker"
-  icono: "🐳"
   descripcion_corta: "Contenedores, imágenes y orquestación con Docker"
   descripcion: >
     Introducción a la contenerización con Docker: creación de imágenes,
@@ -37,7 +35,6 @@
 
 - nombre: "Construcción de Sitios Web"
   url: "/materias/construccion-web"
-  icono: "🌐"
   descripcion_corta: "Desarrollo y publicación de sitios web con GitHub"
   descripcion: >
     Metodologías y herramientas para construir y publicar sitios web modernos

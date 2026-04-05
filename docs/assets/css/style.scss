@@ -4,31 +4,94 @@
 @import "minima";
 
 /* ============================================================
-   Portal de Clases – Custom Styles (minima override)
+   Portal de Clases – Dark Theme (minima dark skin override)
    ============================================================ */
 
-/* --- Variables --- */
+/* --- Dark palette variables --- */
 :root {
-  --color-primary:   #2c7be5;
-  --color-purple:    #6f42c1;
-  --color-blue:      #2c7be5;
-  --color-green:     #00864e;
-  --color-orange:    #e36209;
-  --color-red:       #d73a49;
-  --color-gray-light: #f6f8fa;
-  --color-border:    #e1e4e8;
+  --color-bg:        #0d1117;
+  --color-bg-card:   #161b22;
+  --color-bg-inset:  #1c2128;
+  --color-border:    #30363d;
+  --color-text:      #e6edf3;
+  --color-muted:     #8b949e;
+  --color-primary:   #58a6ff;
+  --color-purple:    #bc8cff;
+  --color-blue:      #58a6ff;
+  --color-green:     #3fb950;
+  --color-orange:    #d29922;
+  --color-red:       #f85149;
   --radius:          8px;
 }
 
-/* --- Site header accent --- */
-.site-header {
-  border-top: 3px solid var(--color-primary);
+/* --- Base overrides --- */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
-/* --- Navigation spacing --- */
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: #79b8ff;
+}
+
+/* --- Site header --- */
+.site-header {
+  background-color: #010409;
+  border-top: 3px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--color-text);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.site-title:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* --- Navigation --- */
 .site-nav .page-link {
+  color: var(--color-muted);
   margin-left: 16px;
   font-weight: 500;
+  transition: color 0.15s;
+}
+
+.site-nav .page-link:hover {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/* --- Page layout --- */
+.page-content {
+  padding-top: 2rem;
+}
+
+.wrapper {
+  max-width: 900px;
+}
+
+/* --- Headings --- */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+h2 { border-bottom: 1px solid var(--color-border); padding-bottom: 0.4rem; margin-top: 2rem; }
+
+/* --- Horizontal rule --- */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
 }
 
 /* --- Quick links grid on home --- */
@@ -41,18 +104,19 @@
 
 .quick-card {
   display: inline-block;
-  padding: 10px 18px;
-  background: var(--color-gray-light);
+  padding: 10px 20px;
+  background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   font-weight: 600;
+  font-size: 0.9rem;
   text-decoration: none;
-  color: #24292e;
-  transition: background 0.15s, transform 0.1s;
+  color: var(--color-text);
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
 }
 
 .quick-card:hover {
-  background: #e8f0fe;
+  background: var(--color-bg-inset);
   border-color: var(--color-primary);
   color: var(--color-primary);
   transform: translateY(-2px);
@@ -72,48 +136,59 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: 20px;
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-  transition: box-shadow 0.2s, transform 0.15s;
+  background: var(--color-bg-card);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+  transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
 }
 
 .materia-card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.5);
   transform: translateY(-3px);
+  border-color: var(--color-primary);
 }
 
 .materia-card h3 {
-  margin-top: 8px;
+  margin-top: 4px;
   margin-bottom: 8px;
   font-size: 1.1rem;
 }
 
 .materia-card h3 a {
   text-decoration: none;
+  color: var(--color-text);
 }
 
-.materia-icon {
-  font-size: 2rem;
+.materia-card h3 a:hover {
+  color: var(--color-primary);
+}
+
+.materia-card p {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0;
 }
 
 .materia-purple { border-top: 4px solid var(--color-purple); }
 .materia-blue   { border-top: 4px solid var(--color-blue);   }
 .materia-green  { border-top: 4px solid var(--color-green);  }
 
-.btn-ver {
+a.btn-ver {
   display: inline-block;
-  margin-top: 10px;
-  padding: 6px 14px;
-  border-radius: 5px;
+  margin-top: 12px;
+  padding: 7px 16px;
+  border-radius: 6px;
   background: var(--color-primary);
-  color: #fff !important;
+  color: #0d1117;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
+  transition: background 0.15s, transform 0.1s;
 }
 
-.btn-ver:hover {
-  background: #1a5dc8;
+a.btn-ver:hover {
+  background: #79b8ff;
+  color: #0d1117;
+  transform: translateY(-1px);
   text-decoration: none;
 }
 
@@ -123,13 +198,13 @@
   border-radius: var(--radius);
   padding: 16px 20px;
   margin-bottom: 14px;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  background: var(--color-bg-card);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
 
 .tarea-pendiente  { border-left: 5px solid var(--color-red);    }
 .tarea-progreso   { border-left: 5px solid var(--color-orange);  }
-.tarea-completada { border-left: 5px solid var(--color-green);   opacity: 0.8; }
+.tarea-completada { border-left: 5px solid var(--color-green);   opacity: 0.75; }
 
 .tarea-header {
   display: flex;
@@ -143,23 +218,24 @@
 .tarea-nombre {
   font-weight: 700;
   font-size: 1rem;
+  color: var(--color-text);
 }
 
 .tarea-badge {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   padding: 3px 10px;
   border-radius: 20px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
-.badge-pendiente  { background: #ffeef0; color: var(--color-red);    border: 1px solid #ffc0c7; }
-.badge-progreso   { background: #fff3cd; color: var(--color-orange);  border: 1px solid #ffe69c; }
-.badge-completada { background: #d4edda; color: var(--color-green);   border: 1px solid #a8d5b5; }
+.badge-pendiente  { background: rgba(248,81,73,0.15);  color: var(--color-red);    border: 1px solid rgba(248,81,73,0.4);  }
+.badge-progreso   { background: rgba(210,153,34,0.15); color: var(--color-orange); border: 1px solid rgba(210,153,34,0.4); }
+.badge-completada { background: rgba(63,185,80,0.15);  color: var(--color-green);  border: 1px solid rgba(63,185,80,0.4);  }
 
 .tarea-desc {
-  color: #555;
+  color: var(--color-muted);
   font-size: 0.92rem;
   margin: 4px 0 8px;
 }
@@ -169,7 +245,7 @@
   flex-wrap: wrap;
   gap: 14px;
   font-size: 0.83rem;
-  color: #555;
+  color: var(--color-muted);
 }
 
 /* --- Tables --- */
@@ -182,32 +258,59 @@ table {
 
 th, td {
   border: 1px solid var(--color-border);
-  padding: 8px 12px;
+  padding: 9px 14px;
   text-align: left;
+  color: var(--color-text);
 }
 
 th {
-  background: var(--color-gray-light);
+  background: var(--color-bg-inset);
   font-weight: 700;
+  color: var(--color-text);
 }
 
 tr:nth-child(even) td {
-  background: #fafbfc;
+  background: rgba(255,255,255,0.025);
 }
 
 /* --- Blockquote tip --- */
 blockquote {
-  background: #fffbea;
-  border-left: 4px solid #f1c40f;
-  padding: 10px 16px;
+  background: rgba(210,153,34,0.1);
+  border-left: 4px solid var(--color-orange);
+  padding: 12px 18px;
   border-radius: 0 var(--radius) var(--radius) 0;
-  color: #555;
+  color: var(--color-muted);
   font-style: normal;
+  margin-left: 0;
+}
+
+blockquote p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+/* --- Code blocks --- */
+pre, code {
+  background: var(--color-bg-inset);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+/* --- Site footer --- */
+.site-footer {
+  background-color: #010409;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+}
+
+.site-footer a {
+  color: var(--color-primary);
 }
 
 /* --- Responsive --- */
 @media (max-width: 600px) {
   .materias-grid { flex-direction: column; }
-  .quick-links   { flex-direction: column; }
-  .tarea-header  { flex-direction: column; align-items: flex-start; }
+  .quick-links { flex-direction: column; }
+  .tarea-header { flex-direction: column; align-items: flex-start; }
+  .wrapper { padding: 0 1rem; }
 }

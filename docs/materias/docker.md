@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "🐳 Docker y Contenedores"
+title: "Docker y Contenedores"
 permalink: /materias/docker
 ---
 
@@ -10,7 +10,7 @@ permalink: /materias/docker
 
 ---
 
-## 📋 Temas del curso
+## Temas del curso
 
 {% for tema in materia.temas %}
 - {{ tema }}
@@ -18,7 +18,7 @@ permalink: /materias/docker
 
 ---
 
-## 📓 Clases y notebooks
+## Clases y notebooks
 
 | # | Tema | Notebook |
 |---|------|----------|
@@ -28,13 +28,13 @@ permalink: /materias/docker
 
 ---
 
-## 🔗 Repositorio
+## Repositorio
 
 [Ver todos los materiales en GitHub]({{ materia.repositorio }}){:target="_blank"}
 
 ---
 
-## ✅ Tareas de esta materia
+## Tareas de esta materia
 
 {% assign tareas_materia = site.data.tareas | where: "materia", "Docker y Contenedores" %}
 {% for tarea in tareas_materia %}

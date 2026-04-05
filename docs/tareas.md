@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "📝 Tareas"
+title: "Tareas"
 permalink: /tareas
 ---
 
@@ -8,7 +8,7 @@ Aquí se listan todas las tareas organizadas por estado. Edita `_data/tareas.yml
 
 ---
 
-## 🔴 Pendientes
+## Pendientes
 
 {% assign pendientes = site.data.tareas | where: "estado", "pendiente" | sort: "entrega" %}
 {% if pendientes.size > 0 %}
@@ -20,19 +20,19 @@ Aquí se listan todas las tareas organizadas por estado. Edita `_data/tareas.yml
   </div>
   <p class="tarea-desc">{{ tarea.descripcion }}</p>
   <div class="tarea-meta">
-    <span>📚 {{ tarea.materia }}</span>
-    <span>📅 Entrega: <strong>{{ tarea.entrega }}</strong></span>
-    <span>⚡ Prioridad: {{ tarea.prioridad }}</span>
+    <span>{{ tarea.materia }}</span>
+    <span>Entrega: <strong>{{ tarea.entrega }}</strong></span>
+    <span>Prioridad: {{ tarea.prioridad }}</span>
   </div>
 </div>
 {% endfor %}
 {% else %}
-*No hay tareas pendientes. ¡Excelente!* ✅
+*No hay tareas pendientes. ¡Excelente!*
 {% endif %}
 
 ---
 
-## 🟡 En progreso
+## En progreso
 
 {% assign en_progreso = site.data.tareas | where: "estado", "en progreso" | sort: "entrega" %}
 {% if en_progreso.size > 0 %}
@@ -44,9 +44,9 @@ Aquí se listan todas las tareas organizadas por estado. Edita `_data/tareas.yml
   </div>
   <p class="tarea-desc">{{ tarea.descripcion }}</p>
   <div class="tarea-meta">
-    <span>📚 {{ tarea.materia }}</span>
-    <span>📅 Entrega: <strong>{{ tarea.entrega }}</strong></span>
-    <span>⚡ Prioridad: {{ tarea.prioridad }}</span>
+    <span>{{ tarea.materia }}</span>
+    <span>Entrega: <strong>{{ tarea.entrega }}</strong></span>
+    <span>Prioridad: {{ tarea.prioridad }}</span>
   </div>
 </div>
 {% endfor %}
@@ -56,20 +56,20 @@ Aquí se listan todas las tareas organizadas por estado. Edita `_data/tareas.yml
 
 ---
 
-## 🟢 Completadas
+## Completadas
 
 {% assign completadas = site.data.tareas | where: "estado", "completada" | sort: "entrega" %}
 {% if completadas.size > 0 %}
 {% for tarea in completadas %}
 <div class="tarea-card tarea-completada">
   <div class="tarea-header">
-    <span class="tarea-nombre">✅ {{ tarea.nombre }}</span>
+    <span class="tarea-nombre">{{ tarea.nombre }}</span>
     <span class="tarea-badge badge-completada">Completada</span>
   </div>
   <p class="tarea-desc">{{ tarea.descripcion }}</p>
   <div class="tarea-meta">
-    <span>📚 {{ tarea.materia }}</span>
-    <span>📅 Entregada: <strong>{{ tarea.entrega }}</strong></span>
+    <span>{{ tarea.materia }}</span>
+    <span>Entregada: <strong>{{ tarea.entrega }}</strong></span>
   </div>
 </div>
 {% endfor %}
@@ -79,4 +79,4 @@ Aquí se listan todas las tareas organizadas por estado. Edita `_data/tareas.yml
 
 ---
 
-> 💡 Para agregar o editar tareas, modifica el archivo `docs/_data/tareas.yml` en el repositorio.
+> Para agregar o editar tareas, modifica el archivo `docs/_data/tareas.yml` en el repositorio.

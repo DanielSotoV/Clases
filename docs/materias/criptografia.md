@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "🔐 Criptografía con Python"
+title: "Criptografía con Python"
 permalink: /materias/criptografia
 ---
 
@@ -10,7 +10,7 @@ permalink: /materias/criptografia
 
 ---
 
-## 📋 Temas del curso
+## Temas del curso
 
 {% for tema in materia.temas %}
 - {{ tema }}
@@ -18,7 +18,7 @@ permalink: /materias/criptografia
 
 ---
 
-## 📓 Clases y notebooks
+## Clases y notebooks
 
 | # | Tema | Notebook |
 |---|------|----------|
@@ -32,13 +32,13 @@ permalink: /materias/criptografia
 
 ---
 
-## 🔗 Repositorio
+## Repositorio
 
 [Ver todos los materiales en GitHub]({{ materia.repositorio }}){:target="_blank"}
 
 ---
 
-## ✅ Tareas de esta materia
+## Tareas de esta materia
 
 {% assign tareas_materia = site.data.tareas | where: "materia", "Criptografía con Python" %}
 {% for tarea in tareas_materia %}

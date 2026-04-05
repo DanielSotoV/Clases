@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "✉️ Contacto"
+title: "Contacto"
 permalink: /contacto
 ---
 
@@ -15,7 +15,7 @@ permalink: /contacto
 
 ---
 
-## 🕐 Horario de atención (Office Hours)
+## Horario de atención (Office Hours)
 
 | Día | Hora | Modalidad |
 |-----|------|-----------|
@@ -23,11 +23,11 @@ permalink: /contacto
 | Miércoles | 14:00 – 16:00 | Virtual – [Enlace a videollamada](#) |
 | Viernes | 09:00 – 10:00 | Presencial – Lab 3 |
 
-> ⚠️ Fuera de estos horarios, las consultas se responden dentro de **24 horas hábiles**.
+> Fuera de estos horarios, las consultas se responden dentro de **24 horas hábiles**.
 
 ---
 
-## 💬 Canales de comunicación
+## Canales de comunicación
 
 - **Issues en GitHub**: Para reportar errores, hacer preguntas técnicas o proponer mejoras en el material. Abre un [nuevo issue](https://github.com/DanielSotoV/Clases/issues/new) en el repositorio.
 - **Correo electrónico**: Para asuntos académicos formales o privados.
@@ -35,7 +35,7 @@ permalink: /contacto
 
 ---
 
-## 📝 Pautas para consultas efectivas
+## Pautas para consultas efectivas
 
 Para recibir una respuesta más rápida y precisa, incluye en tu mensaje:
 
@@ -46,11 +46,11 @@ Para recibir una respuesta más rápida y precisa, incluye en tu mensaje:
 
 ---
 
-## 🐛 Reportar un problema en el material
+## Reportar un problema en el material
 
 Si encuentras un error en algún notebook o en el sitio web, puedes:
 
 1. Abrir un [Issue en GitHub](https://github.com/DanielSotoV/Clases/issues/new) con el título `[Error] Descripción breve`.
 2. O hacer un **Pull Request** directamente con la corrección.
 
-Toda contribución es bienvenida. 🙌
+Toda contribución es bienvenida.
