@@ -1,0 +1,36 @@
+title: "Portal de Clases"
+description: "Gestión de materias, tareas, calendario y recursos académicos"
+author: "DanielSotoV"
+
+url: "https://DanielSotoV.github.io"
+baseurl: "/Clases"
+
+theme: minima
+
+minima:
+  skin: classic
+
+show_excerpts: true
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - materias/index.md
+  - calendario.md
+  - tareas.md
+  - recursos.md
+  - politicas.md
+  - contacto.md
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
