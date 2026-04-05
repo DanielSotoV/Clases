@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "📅 Calendario"
+title: "Calendario"
 permalink: /calendario
 ---
 
@@ -17,27 +17,27 @@ permalink: /calendario
 
 {% assign eventos = site.data.calendario.eventos %}
 
-### 📦 Entregas
+### Entregas
 
 {% assign entregas = eventos | where: "tipo", "entrega" %}
 {% for e in entregas %}
-- 📦 **{{ e.fecha }}** — {{ e.descripcion }} `{{ e.materia }}`
+- **{{ e.fecha }}** — {{ e.descripcion }} `{{ e.materia }}`
 {% endfor %}
 
-### 📝 Exámenes
+### Exámenes
 
 {% assign examenes = eventos | where: "tipo", "examen" %}
 {% for e in examenes %}
-- 📝 **{{ e.fecha }}** — {{ e.descripcion }} `{{ e.materia }}`
+- **{{ e.fecha }}** — {{ e.descripcion }} `{{ e.materia }}`
 {% endfor %}
 
-### 🚀 Proyectos
+### Proyectos
 
 {% assign proyectos = eventos | where: "tipo", "proyecto" %}
 {% for e in proyectos %}
-- 🚀 **{{ e.fecha }}** — {{ e.descripcion }} `{{ e.materia }}`
+- **{{ e.fecha }}** — {{ e.descripcion }} `{{ e.materia }}`
 {% endfor %}
 
 ---
 
-> 💡 **Tip:** Agrega este calendario a tu aplicación favorita exportando los eventos manualmente o pidiéndole a tu profesor el archivo `.ics`.
+> **Tip:** Agrega este calendario a tu aplicación favorita exportando los eventos manualmente o pidiéndole a tu profesor el archivo `.ics`.

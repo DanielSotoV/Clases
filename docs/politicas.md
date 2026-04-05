@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "📋 Políticas y Evaluación"
+title: "Políticas y Evaluación"
 permalink: /politicas
 ---
 
@@ -19,7 +19,7 @@ El sistema de calificación del semestre está compuesto por las siguientes cate
 
 ---
 
-## 📌 Política de entregas
+## Política de entregas
 
 - Las tareas deben entregarse **antes** de la fecha límite indicada en la plataforma.
 - No se aceptan entregas con más de **48 horas** de retraso sin justificación.
@@ -29,7 +29,7 @@ El sistema de calificación del semestre está compuesto por las siguientes cate
 
 ---
 
-## 🚫 Política de integridad académica
+## Política de integridad académica
 
 - Está **prohibido** copiar o plagiar código o contenido de otros estudiantes.
 - El uso de herramientas de IA está **permitido** como apoyo, pero el estudiante debe comprender y poder explicar el código entregado.
@@ -37,7 +37,7 @@ El sistema de calificación del semestre está compuesto por las siguientes cate
 
 ---
 
-## 🛠️ Requisitos técnicos
+## Requisitos técnicos
 
 - Tener **Python 3.10+** instalado.
 - Tener **Docker Desktop** o Docker Engine instalado.
@@ -47,7 +47,7 @@ El sistema de calificación del semestre está compuesto por las siguientes cate
 
 ---
 
-## 📬 Proceso de revisión de calificaciones
+## Proceso de revisión de calificaciones
 
 Si tienes dudas sobre una calificación, debes enviar una solicitud de revisión dentro de los **5 días hábiles** siguientes a la publicación de la nota. La solicitud debe incluir:
 

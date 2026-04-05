@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "🌐 Construcción de Sitios Web"
+title: "Construcción de Sitios Web"
 permalink: /materias/construccion-web
 ---
 
@@ -10,7 +10,7 @@ permalink: /materias/construccion-web
 
 ---
 
-## 📋 Temas del curso
+## Temas del curso
 
 {% for tema in materia.temas %}
 - {{ tema }}
@@ -18,7 +18,7 @@ permalink: /materias/construccion-web
 
 ---
 
-## 📓 Clases y notebooks
+## Clases y notebooks
 
 | # | Tema | Notebook |
 |---|------|----------|
@@ -26,13 +26,13 @@ permalink: /materias/construccion-web
 
 ---
 
-## 🔗 Repositorio
+## Repositorio
 
 [Ver todos los materiales en GitHub]({{ materia.repositorio }}){:target="_blank"}
 
 ---
 
-## ✅ Tareas de esta materia
+## Tareas de esta materia
 
 {% assign tareas_materia = site.data.tareas | where: "materia", "Construcción de Sitios Web" %}
 {% for tarea in tareas_materia %}
