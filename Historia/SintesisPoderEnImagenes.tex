@@ -1,5 +1,5 @@
 % ============================================================
-%  Análisis de imagen: Poder y Protesta
+%  Síntesis: El poder en imágenes
 %  Escultura de Banksy, Waterloo Place, Londres (2026)
 % ============================================================
 \documentclass[12pt, a4paper]{article}
@@ -11,6 +11,7 @@
 \usepackage{geometry}
 \geometry{top=3cm, bottom=3cm, left=3cm, right=3cm}
 
+\usepackage{graphicx}
 \usepackage{setspace}
 \onehalfspacing
 
@@ -27,146 +28,137 @@
     citecolor=black
 }
 
+% Bibliografía con biblatex (sin urldate)
+\usepackage[
+    backend=biber,
+    style=numeric,
+    sorting=none,
+    url=true,
+    date=year
+]{biblatex}
+\addbibresource{referencias.bib}
+
 % Encabezado/pie de página
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{\small Poder y Protesta}
-\lhead{\small Análisis de imagen}
+\rhead{\small \textit{Blind Patriotism} -- Banksy (2026)}
+\lhead{\small Historia, política y estética}
 \cfoot{\thepage}
-
-% --- Título ---
-\title{
-    \vspace{-1cm}
-    \large \textbf{Análisis de imagen: Poder y Protesta} \\[0.4cm]
-    \normalsize \textit{La escultura de Banksy en Waterloo Place, Londres (2026)} \\[0.3cm]
-    \small A partir del capítulo ``Poder y Protesta'' de Peter Burke \\
-    en \textit{Visto y no visto. El uso de la imagen como documento histórico}
-}
-\author{}
-\date{}
 
 % ============================================================
 \begin{document}
 
-\maketitle
-\thispagestyle{fancy}
-\vspace{-1.5cm}
+% ---- Portada ----
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    \includegraphics[width=0.25\textwidth]{logoUdea.png}\\[0.8cm]
+    {\large \textbf{Universidad de Antioquia}}\\[0.3cm]
+    {\large Historia, política y estética}\\[3cm]
+
+    {\LARGE \textbf{El poder en imágenes}}\\[0.5cm]
+    {\large Análisis de \textit{Blind Patriotism} de Banksy}\\[0.4cm]
+    {\normalsize A partir del capítulo ``Poder y Protesta'' de Peter Burke\\
+    en \textit{Visto y no visto. El uso de la imagen como documento histórico}}\\[3cm]
+
+    {\large Daniel Soto V.}\\[1cm]
+    {\large Mayo de 2026}
+    \vfill
+\end{titlepage}
 
 % ---- Ficha de la imagen ----
 \section*{Ficha de la imagen}
 
 \begin{tabular}{p{3.5cm} p{10.5cm}}
-\textbf{Título (oficioso):} & \textit{Blind Patriotism} [Patriotismo ciego] \\[4pt]
-\textbf{Autor:}             & Banksy (identidad no confirmada oficialmente; Reuters, en marzo de 2026, señaló al artista Robin Gunningham, sin que Banksy lo confirme ni lo niegue) \\[4pt]
-\textbf{Fecha:}             & Instalada en la madrugada del 29 de abril de 2026; confirmada por el artista el 30 de abril de 2026 mediante un vídeo publicado en su cuenta de Instagram \\[4pt]
-\textbf{Lugar:}             & Waterloo Place, Westminster, Londres (Reino Unido) \\[4pt]
-\textbf{Técnica/material:} & Escultura de resina, sobre plinto de concreto; firma ``Banksy'' grabada en la base \\[4pt]
-\textbf{Fuentes:}          & NPR (2 de mayo de 2026): \url{https://www.npr.org/2026/05/02/nx-s1-5808871/banksy-statue-london}; CNN (1.º de mayo de 2026): \url{https://www.cnn.com/2026/05/01/style/banksy-new-statue-london-intl-hnk}; Wikipedia: \url{https://en.wikipedia.org/wiki/Banksy_statue}; Smithsonian Magazine (1.º de mayo de 2026): \url{https://www.smithsonianmag.com/smart-news/attributed-to-banksy-a-new-statue-of-a-suited-man-180988662/}; MyArtBroker (2026): \url{https://www.myartbroker.com/artist-banksy/articles/banksy-new-sculpture-london-waterloo-place-2026} \\
+\textbf{Título:}        & \textit{Blind Patriotism} (Patriotismo ciego) \\[4pt]
+\textbf{Autor:}         & Banksy \\[4pt]
+\textbf{Fecha:}         & Instalada en la madrugada del 29 de abril de 2026;
+                          confirmada por el artista el 30 de abril mediante
+                          su cuenta de Instagram \\[4pt]
+\textbf{Lugar:}         & Waterloo Place, Westminster, Londres (Reino Unido) \\[4pt]
+\textbf{Técnica:}       & Escultura de resina sobre plinto de concreto \\[4pt]
+\textbf{Fuente imagen:} & \url{https://www.wishtv.com/news/international/banksy-blind-patriotism-statue/} \\
 \end{tabular}
 
 \bigskip
 
-% ---- Introducción contextual ----
-\section*{Introducción: la intervención y su contexto}
+% ---- Introducción ----
+\section*{Introducción}
 
-En la madrugada del 29 de abril de 2026, una escultura de escala monumental apareció sin previo aviso en Waterloo Place, una de las plazas más cargadas de simbolismo imperial del centro de Londres. La obra, instalada secretamente y firmada en su base, representaba a un hombre de traje portando una bandera que, agitada por el viento, le cubría completamente el rostro. El personaje avanza con paso decidido, pero está a punto de caer del borde del plinto sobre el que se sostiene. Al día siguiente, el artista conocido como Banksy reclamó la autoría a través de su cuenta oficial de Instagram.
+Una madrugada de abril de 2026, sin permiso y sin anuncio previo, apareció en Waterloo Place una escultura que nadie esperaba. Un hombre de traje, cargando una bandera que le tapa completamente la cara, avanza con el pie ya fuera del plinto, a punto de caer al vacío. Al día siguiente, Banksy la reclamó con un video en Instagram. Eso fue todo \cite{npr2026}.
 
-La ubicación no era arbitraria. Waterloo Place alberga estatuas de figuras emblemáticas del poder imperial y militar británico, entre ellas la del rey Eduardo VII y el Memorial de la Guerra de Crimea. Al insertar su escultura en ese conjunto, Banksy no produjo simplemente una obra de arte público, sino un gesto de intervención crítica en el corazón del paisaje conmemorativo del poder estatal.
+La elección del lugar no fue casual. Waterloo Place está rodeada de monumentos al poder imperial y militar británico: el rey Eduardo VII, el Memorial de la Guerra de Crimea. Al poner su obra ahí, Banksy no hizo arte decorativo. Hizo una intervención directa en el corazón del paisaje simbólico del Estado \cite{cbc2026}.
 
 % ---- Pregunta 1 ----
 \section{¿Qué tipo de poder se representa o cuestiona?}
 
-La escultura pone en cuestión, en primer lugar, el \textbf{poder político-simbólico}: aquel que se ejerce no tanto por la fuerza directa, sino a través de la producción de significados compartidos. La bandera —icono por excelencia de la identidad nacional y la soberanía estatal— es el dispositivo central de la obra. Al convertirla en obstáculo para la visión del propio portador, Banksy interroga el mecanismo por el cual los símbolos nacionales movilizan adhesión emocional y lealtad colectiva.
+El poder que esta imagen pone en tela de juicio no es el del soldado ni el del rey. Es el del funcionario, el diplomático, el administrador: esa clase de personas que toman decisiones ``en nombre de la nación'' mientras enarbolan símbolos que ellos mismos no cuestionan. El personaje lleva traje, no uniforme. Esa elección ya dice mucho.
 
-Hay también una crítica al \textbf{poder institucional y burocrático}. El personaje viste un traje, no un uniforme militar ni un atuendo popular: es el funcionario, el diplomático, el administrador. Como señala el análisis publicado en \textit{Parametric Architecture} (2026), la figura puede leerse como una \enquote{alegoría del sujeto político occidental posicionado entre el discurso de seguridad, el lenguaje diplomático, la idea de interés nacional y un sentido de superioridad histórica}. La obra no apunta exclusivamente al ciudadano ordinario que enarbola una bandera; apunta a quienes toman decisiones desde posiciones de autoridad civil mientras declaran obrar en nombre de principios nacionales que ellos mismos no logran ver con claridad.
+La bandera es el dispositivo central de la obra. Debería representar a todos, cohesionar, dar identidad. Pero aquí termina siendo exactamente lo contrario: una venda. El poder simbólico, el que se ejerce a través de los símbolos colectivos ---banderas, himnos, monumentos---, es quizás el más insidioso de todos porque no se percibe como imposición; se percibe como identidad. Y esta escultura lo muestra sin rodeos.
 
-Finalmente, la obra dialoga con el \textbf{poder de la memoria histórica}. Al situarse entre monumentos del siglo XIX y comienzos del XX dedicados a guerras y a la expansión imperial, la escultura instaura una conversación anacrónica que relativiza la grandeza conmemorativa que le rodea.
+Como describe el análisis de \textit{Parametric Architecture}, la figura puede leerse como una alegoría del sujeto político occidental atrapado entre el discurso de la seguridad nacional, la idea del interés común y un sentido de superioridad histórica que ya no puede justificar pero tampoco puede ver \cite{parametric2026}.
+
+Además, al instalarse entre los monumentos del siglo XIX, la escultura establece una conversación directa con el \textbf{poder de la memoria histórica}: la grandeza imperial que esos monumentos celebran queda, de pronto, cuestionada por lo que está al lado.
 
 % ---- Pregunta 2 ----
 \section{Elementos visuales que construyen la representación}
 
-\subsection*{La figura y su postura}
+\subsection*{La postura y el movimiento}
 
-El hombre avanza con el pie derecho extendido, cruzando ya el límite del plinto. La dirección hacia adelante —gesto típico de las estatuas ecuestes o de los monumentos a héroes— comunica determinación y liderazgo, pero esta convención es inmediatamente desestabilizada por la posición del pie: el sujeto está a punto de caer al vacío. La combinación de movimiento y peligro inminente produce una tensión dramática que es clave para la lectura crítica de la obra.
+El personaje avanza con decisión. Eso, en el lenguaje de los monumentos, significa liderazgo, progreso, heroísmo. Pero el pie derecho ya está fuera del plinto. El hombre está a punto de caer. Banksy tomó la postura del héroe clásico y le agregó ese detalle que lo arruina todo ---y lo hace perfecto. La combinación de movimiento y peligro inminente es el corazón de la obra: hace que el espectador sienta algo que los monumentos convencionales nunca permitirían sentir frente a una figura de poder.
 
 \subsection*{La bandera}
 
-La bandera no porta ningún símbolo identificable: no hay escudo, no hay colores nacionales específicos. Esta generalidad es deliberada. Como observó un usuario de Instagram citado por CNN (2026), \enquote{la bandera no lleva identidad —ningún país, ninguna lealtad—, solo una forma, lo que hace a la figura universal}. La ausencia de emblema convierte el objeto en un signo puro del concepto de bandera, desnacionalizado y, por ello, potencialmente universal. Su movimiento —impulsada por el viento hacia el rostro del portador— activa la metáfora central: lo que debería ser estandarte de visión colectiva se convierte en venda.
+No tiene escudo, no tiene colores identificables. No es la Union Jack ni ninguna otra bandera concreta. Es, simplemente, una bandera. Eso es deliberado, y es inteligente: hace que la crítica no sea solo contra el patriotismo inglés sino contra cualquier patriotismo que funcione como venda \cite{cnn2026}. Lo que debería ser estandarte de visión colectiva se convierte en el obstáculo que impide ver.
 
 \subsection*{El traje}
 
-La vestimenta de civil —saco, corbata, pantalón de vestir— ancla al personaje en el ámbito del poder administrativo y de representación formal, no en el de la guerra ni en el del activismo popular. Esa elección indica que la crítica no recae sobre el soldado razo ni sobre el ciudadano entusiasta, sino sobre las élites que administran los símbolos nacionales.
+No es un uniforme, no es ropa de activista, no es nada popular. Es el traje del poder civil: saco, corbata, pantalón de vestir. La crítica no apunta al ciudadano entusiasta que agita banderas en un estadio; apunta a quienes administran los símbolos nacionales desde posiciones de autoridad.
 
 \subsection*{El plinto y el entorno}
 
-El plinto imita el lenguaje formal de los monumentos históricos circundantes. Banksy adopta la misma gramática visual —base elevada, materiales pétreos, figura en escala monumental— para subvertirla desde adentro. Donde cada monumento de Waterloo Place proyecta permanencia y compostura, el suyo anuncia inestabilidad e inminente colapso. El crítico Alex Dale, citado por Wikipedia (2026), describió la pieza como dotada de \enquote{estética de ornamento de jardín y complejidad moral de un acertijo}.
+El plinto imita exactamente el lenguaje de los monumentos que lo rodean: base elevada, materiales sobrios, escala monumental. Banksy adoptó la gramática visual del poder para subvertirla desde adentro. Donde cada monumento de Waterloo Place transmite permanencia y compostura, el suyo dice inestabilidad e inminente caída \cite{myartbroker2026}.
 
 % ---- Pregunta 3 ----
-\section{Mensaje e interpretación: ¿qué hace la imagen con el poder?}
+\section{¿Qué hace la imagen con el poder?}
 
-La escultura no legitima el poder; tampoco lo denuncia desde una perspectiva de víctima directa. Su operación es la de la \textbf{ironía y la subversión}. Banksy toma las formas del monumento público —el plinto, el traje formal, el gesto de avanzar— y las vacía de su función legitimadora al introducir un solo elemento perturbador: la ceguera provocada por el propio símbolo que el sujeto abraza.
+Esta escultura no describe el poder: lo interpela. No dice ``el patriotismo puede ser peligroso'' con palabras; lo muestra con una figura que literalmente no puede ver hacia dónde va porque la bandera le tapa la cara. Y esa claridad no es un defecto. Hay quien preferiría algo más ambiguo, más ``abierto a interpretación''. Pero hay algo que agradecerle a una imagen que no se hace la misteriosa cuando tiene algo concreto que decir.
 
-El mensaje puede sintetizarse en lo que la obra de arte llama ``patriotismo ciego'' (\textit{blind patriotism}), pero su alcance es más amplio. Sugiere que la lealtad sin crítica a los símbolos colectivos —bandera, nación, estado— no moviliza genuinamente hacia ningún destino: coloca a quien la practica al borde del precipicio. El movimiento hacia adelante, que en los monumentos convencionales significa progreso, aquí significa riesgo de caída. La confianza ciega en el símbolo nacional reemplaza a la deliberación y a la visión política real.
+La ceguera voluntaria frente a los símbolos colectivos, la incapacidad de preguntarse qué hay detrás de la bandera, es uno de los problemas políticos más reales de nuestra época. El nacionalismo populista que atraviesa el mundo de los años 2020 funciona exactamente así: lealtad primero, preguntas nunca. Banksy lo nombra sin rodeos, en uno de los lugares más cargados de simbolismo imperial del mundo, usando los materiales del propio poder que cuestiona.
 
-El \textit{Blind Patriotism} no propone una alternativa explícita ni articula un programa político. Opera en el registro de la pregunta más que de la respuesta: ¿hacia dónde lleva marchar bajo una bandera que te impide ver?
+Lo que el artista llama \textit{blind patriotism} no es solo una figura retórica. El movimiento hacia adelante, que en los monumentos convencionales significa progreso, aquí significa riesgo de caída. La confianza ciega en el símbolo reemplaza a la deliberación política real, y eso tiene consecuencias \cite{smithsonian2026}.
+
+La escultura no propone una alternativa ni articula un programa. Eso también está bien. Formula la pregunta que importa: ¿hacia dónde lleva marchar bajo una bandera que no te deja ver?
 
 % ---- Pregunta 4 ----
-\section{Relación con las ideas de Peter Burke en ``Poder y Protesta''}
+\section{Relación con las ideas de Peter Burke}
 
-En el capítulo cuarto de \textit{Visto y no visto. El uso de la imagen como documento histórico} (2001), Peter Burke examina el papel de las imágenes tanto como instrumentos de afirmación del poder como vehículos de protesta y subversión política. Una de sus tesis centrales es que \enquote{las imágenes son una forma importante de documento histórico} que va más allá del mero registro: \enquote{reflejan un testimonio ocular} de las mentalidades, los valores y los conflictos de su época. Burke observa que, desde la Antigüedad, los gobernantes han utilizado la imagen para legitimar su autoridad —mediante convenciones visuales como la vestimenta, la pose, la escala, los gestos—, y que los movimientos de protesta han respondido recurriendo a las mismas imágenes, pero invirtiéndolas o resignificándolas.
+Burke sostiene en el capítulo ``Poder y Protesta'' que las imágenes son documentos históricos capaces de revelar no solo los hechos sino las mentalidades, los valores y los conflictos de una época \cite{burke2001}. No son meras ilustraciones: construyen significados, legitiman poderes o los cuestionan. Y señala que los movimientos de protesta históricamente han respondido al poder usando sus propios lenguajes visuales, pero invirtiéndolos.
 
-Esta dinámica es exactamente la que Banksy pone en práctica. La escultura de Waterloo Place no inventa un lenguaje propio: toma prestado el lenguaje del monumento público —ese dispositivo visual por excelencia de la autorepresentación del poder estatal— y lo desvía. Burke señala que en las imágenes de poder conviven elementos que \enquote{buscan legitimar, ironizar, subvertir o denunciar}, y que el historiador debe distinguir entre la intención del productor, la lectura del espectador coetáneo y la interpretación posterior. En el caso de Banksy, los tres niveles coinciden de manera poco frecuente: la intención subversiva es explícita, la recepción inmediata fue masivamente crítica hacia el poder, y la lectura histórica futura probablemente la inscriba en el debate sobre el auge del nacionalismo populista de los años 2020.
+Eso es exactamente lo que hace esta escultura. No inventa un lenguaje propio: toma el del monumento público, ese dispositivo visual por excelencia de la autorepresentación del poder estatal, y lo vuelca contra él mismo. Banksy no irrumpe desde afuera del sistema de símbolos; entra en él, aprende a hablar su idioma y lo usa para decir lo contrario.
 
-Burke también advierte que las imágenes no son testimonios neutros: el artista \enquote{selecciona qué aspectos del mundo real va a plasmar} y no renuncia a una puesta en escena, a convenciones culturales ni a un posicionamiento moral o político. La escultura de Banksy cumple exactamente este criterio: su aparente objetividad formal —la figura realista, el plinto sobrio— encubre una fortísima toma de partido que solo se revela en el detalle de la bandera que ciega.
+Burke también advierte que las imágenes no son testimonios neutros: el artista selecciona qué mostrar y desde qué posición \cite{burke2001}. En este caso, la selección es obvia y la posición, declarada. Pero eso no hace la obra menos valiosa para el análisis histórico; al contrario, la hace más honesta que muchos monumentos que fingen neutralidad mientras glorifican un orden determinado.
 
 % ---- Pregunta 5 ----
-\section{Límites y riesgos de usar esta imagen como documento histórico}
+\section{Límites de usar esta imagen como documento histórico}
 
-\subsection*{La intención autoral como trampa hermenéutica}
+El principal límite es que la ironía está tan bien codificada que la escultura dice más sobre el posicionamiento de su autor que sobre el estado real del patriotismo en la sociedad británica de 2026 \cite{burke2001}. Es un argumento, no un espejo.
 
-Banksy construye deliberadamente un mensaje inequívoco: la ironía está codificada de manera casi didáctica. Eso es, al mismo tiempo, su fortaleza comunicativa y su límite historiográfico. Como advierte Burke, cuanto más explícita es la intención propagandística o subversiva de una imagen, más opaca resulta para el análisis de las condiciones sociales que la rodean. La escultura nos dice más sobre el posicionamiento crítico de su autor que sobre el estado real del patriotismo o del nacionalismo en la sociedad británica de 2026.
+Hay también una paradoja institucional que no puede ignorarse: el alcalde de Londres y el Westminster City Council decidieron no retirar la pieza. El poder que la obra critica terminó protegiéndola y convirtiéndola en atractivo turístico. Eso no anula el mensaje, pero lo complica bastante. Una escultura que el Estado abraza con orgullo no es exactamente un gesto de protesta radical.
 
-\subsection*{La autoría anónima y la mediación institucional}
+Por otro lado, las imágenes de la escultura se viralizaron globalmente antes de que cualquier medio pudiera contextualizarlas. Una sola lectura ---la del patriotismo irracional--- dominó la conversación desde el principio \cite{cbc2026}. Burke recordaría que el historiador debe preguntarse quién produce la imagen, para quién y con qué mediaciones. En este caso, la mediación digital masiva homogeneizó la interpretación y dificultó lecturas alternativas.
 
-La identidad no confirmada de Banksy introduce una incertidumbre documental relevante. La firma en la base y la publicación en Instagram son pruebas de reivindicación, no de autoría en sentido estricto. Más significativo aún: la reacción de las instituciones —el alcalde de Londres y el Westminster City Council decidieron no retirar la pieza— forma parte del documento. La escultura fue absorbida rápidamente por el sistema que pretendía criticar: el poder estatal la protegió, la preservó y la convirtió en atractivo turístico. Esta cooptación institucional limita su potencial subversivo real y complica su lectura como gesto de protesta genuina frente al poder.
-
-\subsection*{La circulación digital como distorsión}
-
-Las imágenes de la escultura se difundieron globalmente a través de redes sociales antes de que ningún medio de comunicación pudiera contextualizar la obra. Esa circulación viralizó una interpretación determinada —``el hombre cegado por la bandera como metáfora del patriotismo irracional''— antes de que pudieran emerger lecturas alternativas. Para Burke, el historiador que usa imágenes debe preguntarse siempre quién produce la imagen, para quién, en qué contexto y con qué mediaciones. En este caso, la mediación digital masiva homogeneizó la interpretación y dificultó lecturas disidentes o matizadas.
-
-\subsection*{El riesgo de la iconización}
-
-Existe, finalmente, el riesgo de que la escultura sea leída en el futuro como un documento del ``espíritu de la época'' cuando en realidad es una intervención polémica de un autor con posicionamiento político definido. Toda imagen que alcanza notoriedad corre el riesgo de ser naturalizada como evidencia histórica de aquello que solo es su perspectiva sobre la historia.
+Finalmente, existe el riesgo de que esta escultura sea leída en el futuro como evidencia del ``espíritu de la época'', cuando en realidad es la perspectiva de un autor con posicionamiento político muy definido sobre esa época. Toda imagen que alcanza notoriedad corre ese riesgo.
 
 % ---- Conclusión ----
 \section*{Conclusión}
 
-La escultura instalada por Banksy en Waterloo Place el 29 de abril de 2026 es un caso ejemplar de lo que Peter Burke llama el uso de la imagen como intervención en los debates sobre el poder. La obra no solo representa el poder: lo interpela, lo ironiza y lo desestabiliza desde adentro, apropiándose de sus propios lenguajes formales. Situada en uno de los escenarios más cargados de simbolismo imperial de Londres, y en un momento de intensificación de los nacionalismos populistas a escala global, la escultura actúa como un contra-monumento que hace visible la lógica ciega de la adhesión simbólica.
+La escultura de Banksy en Waterloo Place hace bien su trabajo. Toma una pregunta real, la vuelve visible en el lugar más adecuado posible y con los materiales del propio poder que cuestiona. No necesita convencer a nadie de que el patriotismo ciego es peligroso: lo muestra, y eso es suficiente.
 
-Al mismo tiempo, su análisis como documento histórico exige la cautela metodológica que Burke prescribe: toda imagen está construida desde una perspectiva, toda imagen puede ser leída de múltiples maneras, y toda imagen puede ser apropiada —incluso por aquellos a quienes critica— para fines distintos de los que su autor concibió.
+Como documento histórico tiene límites, como cualquier imagen construida con intención explícita. Pero eso no le resta valor analítico. Burke nos enseña a preguntarnos por qué fue producida una imagen, cómo circuló y quién la leyó. Esta fue producida en secreto, circuló globalmente en horas, y fue leída casi unánimemente como una crítica al poder simbólico del Estado. Que el propio Estado luego la protegiera es, a su modo, la confirmación más elocuente de que el mensaje dio en el blanco.
 
 % ---- Bibliografía ----
-\section*{Bibliografía y fuentes}
-
-\begin{enumerate}
-    \item Burke, Peter. \textit{Visto y no visto. El uso de la imagen como documento histórico}. Traducción de Teófilo de Lozoya. Barcelona: Crítica, 2001. [Cap. 4: ``Poder y Protesta'']
-
-    \item NPR. \enquote{Banksy confirms new statue installed in central London is his work.} 2 de mayo de 2026. \url{https://www.npr.org/2026/05/02/nx-s1-5808871/banksy-statue-london}
-
-    \item CNN. \enquote{Banksy's new flag-wielding London statue satirizes blind patriotism.} 1.º de mayo de 2026. \url{https://www.cnn.com/2026/05/01/style/banksy-new-statue-london-intl-hnk}
-
-    \item Smithsonian Magazine. \enquote{Attributed to Banksy, a New Statue of a Suited Man, Blinded by a Flag.} 1.º de mayo de 2026. \url{https://www.smithsonianmag.com/smart-news/attributed-to-banksy-a-new-statue-of-a-suited-man-180988662/}
-
-    \item Wikipedia. \enquote{Banksy statue.} Consultada el 8 de mayo de 2026. \url{https://en.wikipedia.org/wiki/Banksy_statue}
-
-    \item MyArtBroker. \enquote{Banksy's New Sculpture in London: A Suited Figure, a Flag, and a Fall.} 2026. \url{https://www.myartbroker.com/artist-banksy/articles/banksy-new-sculpture-london-waterloo-place-2026}
-
-    \item Parametric Architecture. \enquote{Flag and Void: A Historical and Contemporary Reading of Banksy's Sculpture at Waterloo Place.} Mayo de 2026. \url{https://parametric-architecture.com/banksys-sculpture-at-waterloo-place/}
-
-    \item Class Art Biarritz. \enquote{Blind Patriotism, a new sculpture by Banksy in London.} 2026. \url{https://www.classartbiarritz.net/post/blind-patriotism-a-new-sculpture-by-banksy-in-london}
-
-    \item CBC News. \enquote{Street artist Banksy takes credit for London statue.} 30 de abril de 2026. \url{https://www.cbc.ca/news/entertainment/banksy-statue-london-9.7183201}
-\end{enumerate}
+\printbibliography[title={Referencias}]
 
 \end{document}
